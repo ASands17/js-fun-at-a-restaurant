@@ -1,15 +1,10 @@
 
-
-/*function takeOrder(orderObject, arrayOfOrders) {
-  arrayOfOrders.push(orderObject);
-  return arrayOfOrders;
-
-}
-
 function takeOrder(orderObject, arrayOfOrders) {
-  arrayOfOrders.push(orderObject);
-  return arrayOfOrders; */
-
+  if (arrayOfOrders.length < 3) {
+    arrayOfOrders.push(orderObject);
+      return arrayOfOrders;
+  } else
+  return arrayOfOrders;
 }
 
 
@@ -18,7 +13,7 @@ function takeOrder(orderObject, arrayOfOrders) {
 
 module.exports = {
  takeOrder,
- refundOrder,
+ //refundOrder,
   // listItems,
   // searchOrder
 }
