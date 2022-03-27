@@ -11,6 +11,7 @@ function createRestaurant(restaurantName) {
  }
 
 
+
  function addMenuItem(restaurantObject, newMenuItem) {
    if (newMenuItem.type === "breakfast" && !restaurantObject.menus.breakfast.includes(newMenuItem)) {
      restaurantObject.menus.breakfast.push(newMenuItem);
@@ -26,45 +27,17 @@ function createRestaurant(restaurantName) {
     }
   }
 
+
+
 function removeMenuItem (restaurantObject, nameValue, typeValue) {
  for (i = 0; i < restaurantObject.menus[typeValue].length; i++) {
- if (nameValue === restaurantObject.menus[typeValue][i].name) {
-    restaurantObject.menus[typeValue].splice(i, 1);
-  } return `No one is eating our ${nameValue} - it has been removed from the ${typeValue} menu!`
-
-}  return `Sorry, we don't sell ${nameValue}, try adding a new recipe!`
-
+   if (nameValue === restaurantObject.menus[typeValue][i].name) {
+     restaurantObject.menus[typeValue].splice(i, 1);
+   }
+  return `No one is eating our ${nameValue} - it has been removed from the ${typeValue} menu!`
+  }
+  return `Sorry, we don't sell ${nameValue}, try adding a new recipe!`
 }
-
-
-
-// for test, pizzaRestaurant is the object:
-// {name: "sexyPizza",
-// menus: {
-//   breakfast: [],
-//   lunch: [],
-//   dinner:[],
-// }
-// } --I called this newRestaurantObject
-// --when the value of createRestaurant() is returned, it
-// will be a new value-- pizzaRestaurant. I called this new value
-// restaurantObject, and even though it has a different name, it is the
-// same value of newRestaurantObject
-
-// and bbqPizza is the object: (newMenuItem in my test)
-// {
-//   name: "BBQ Chicken Pizza",
-//   price: "12.49",
-//   type: "lunch"
-// };
-
-//And that means that pizzaRestaurant.menus.lunch[0]
-//should access the bbqPizza object type.
-//This means the bbqPizza object needs to be in
-//the lunch array, as an object.
-
-
-
 
 
 

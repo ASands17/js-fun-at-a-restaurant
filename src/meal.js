@@ -2,6 +2,8 @@ function nameMenuItem(tastyMenuItem) {
   return `Delicious ${tastyMenuItem}`
 }
 
+
+
 function createMenuItem(newItemName, menuItemPrice, menuItemType) {
   var menuItem = {
     name: newItemName,
@@ -10,6 +12,7 @@ function createMenuItem(newItemName, menuItemPrice, menuItemType) {
   };
   return menuItem;
  }
+
 
 
 function addIngredients(ingredient, listIngredients) {
@@ -21,15 +24,21 @@ function addIngredients(ingredient, listIngredients) {
   }
  }
 
+
+
 function formatPrice(initialPrice) {
   var formattedPrice = `$${initialPrice}`;
   return formattedPrice;
 }
 
+
+
 function decreasePrice(initialPrice) {
   var decreasedPrice = (initialPrice - (.1 * initialPrice));
   return decreasedPrice;
 }
+
+
 
 function createRecipe(title, ingredients, menuItemType) {
   var newRecipeObject = {
