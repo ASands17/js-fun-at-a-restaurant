@@ -22,14 +22,14 @@ var stockCount = 12;
 // Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make
 // the inStock count double what it currently is.
 
-stockCount = 12*2;
+stockCount = 12 * 2;
 //console.log(stockCount);
 
 
 // Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack!
 // Use a built in math operator to decrement the inStock count by 1.
 
-stockCount = 24-1;
+stockCount = 24 - 1;
 //console.log(stockCount);
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
@@ -43,12 +43,8 @@ var isFavorite = false;
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
-//WILL NEED TO COME BACK TO THIS
 
 var shouldOrderMore;
-
-//stockCount = 1;
-//console.log(stockCount);
 
 
 if (stockCount < 20) {
@@ -127,6 +123,7 @@ fruits[4];
 var groceryStore = {
   name: 'Sprouts',
   isOpen: true,
+  milesAway: 1.5,
 }
 
 //console.log(groceryStore);
