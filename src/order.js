@@ -4,10 +4,11 @@
 
 function takeOrder(orderObject, arrayOfOrders) {
   if (arrayOfOrders.length < 3) {
-    arrayOfOrders.push(orderObject);
-      return arrayOfOrders;
-  } else
+  arrayOfOrders.push(orderObject);
   return arrayOfOrders;
+} else {
+  return arrayOfOrders;
+ }
 }
 
 
@@ -24,32 +25,30 @@ function refundOrder(orderNumToRemove, arrayOfOrders) {
 
 
   function listItems(arrayOfOrders) {
-
     if (arrayOfOrders.length ===  1) {
       return arrayOfOrders[0].item
-    }  else {
+    } else {
       var output = "";
       for (var i = 0; i < arrayOfOrders.length; i++) {
         if (i !== arrayOfOrders.length - 1) {
-          output += `${arrayOfOrders[i].item}, `;
-        } else{
+        output += `${arrayOfOrders[i].item}, `;
+        } else {
           output += arrayOfOrders[i].item;
         }
        }
        return output;
     }
-}
+  }
 
     function searchOrder(arrayOfOrders, itemTypeString) {
       var isOrderInArray = false;
       for (var i = 0; i < arrayOfOrders.length; i++) {
-      if (arrayOfOrders[i].item === itemTypeString) {
-        isOrderInArray = true;
+        if (arrayOfOrders[i].item === itemTypeString) {
+          isOrderInArray = true;
+        }
       }
-
+      return isOrderInArray;
     }
-    return isOrderInArray;
-  }
 
 
 module.exports = {
